@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
 
+
 const app = express();
 dotenv.config(); 
 
@@ -18,7 +19,8 @@ app.get("/", (req, res) => {
     });
 })
 
-const PORT = process.env.PORT || 5000; // bağlantı için tanımlı bir port kullan eğer tanımlı bir port yoksa 5000 portunu kullan
+
+const PORT = process.env.PORT || 5001; // bağlantı için tanımlı bir port kullan eğer tanımlı bir port yoksa 5000 portunu kullan
 
 
 mongoose.connect(process.env.CONNECTION_URL, {
